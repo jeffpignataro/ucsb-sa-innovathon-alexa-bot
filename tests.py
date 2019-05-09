@@ -1,5 +1,5 @@
-from app import lambda_handler
+from index import handler
 
-lambda_handler(None, None)
+handler(None, None)
 
 print("Stub for deployment tests")
