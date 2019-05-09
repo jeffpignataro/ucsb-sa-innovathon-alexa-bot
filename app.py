@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     responseBody = buildAlexaJson(QUESTION)
     returnObj =  {
         'statusCode': 200,
-        'body': json.dumps(responseBody)
+        'body': "{}".format(json.dumps(responseBody))
     }
     print(returnObj)
     return returnObj
