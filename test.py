@@ -1,1 +1,1 @@
-# Tests Stub
+print("Stub for deployment tests")
