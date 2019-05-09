@@ -4,6 +4,7 @@ def handler(event, context):
     # TODO implement
     QUESTION = 'test'
     responseBody = buildAlexaJson(QUESTION)
+    return responseBody
     returnObj =  {
         'statusCode': 200,
         'body': "{}".format(json.dumps(responseBody))
