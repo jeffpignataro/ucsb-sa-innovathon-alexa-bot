@@ -1,0 +1,16 @@
+    
+language: python
+python:
+  - "3.6"
+cache: pip
+# install:
+#   - pip install -r requirements.txt
+script:
+  - python tests.py
+deploy:
+  provider: lambda
+  function_name: "ucsb-sa-innovathon-alexa-bot"
+  region: "us-west-2"
+  role: "arn:aws:iam::035849207430:role/service-role/ucsb-sa-innovathon-alexa-bot-role-ae8k1d0z"
+  runtime: "python3.7"
+  handler_name: "handler"
