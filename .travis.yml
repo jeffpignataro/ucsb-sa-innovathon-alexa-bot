@@ -3,8 +3,8 @@ language: python
 python:
   - "3.6"
 cache: pip
-# install:
-#   - pip install -r requirements.txt
+install:
+  - pip install ask_sdk_core
 script:
   - python tests.py
 deploy:
