@@ -140,4 +140,4 @@ sb.add_request_handler(SessionEndedRequestHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 
-handler = sb.handler()
+handler = sb.lambda_handler()
