@@ -1,10 +1,10 @@
     
 language: python
 python:
-  - "3.6"
+  - "2.7"
 cache: pip
 install:
-  - pip install ask_sdk_core
+  - pip install -r requirements.txt -t skill_env
 script:
   - python tests.py
 deploy:
@@ -12,5 +12,5 @@ deploy:
   function_name: "ucsb-sa-innovathon-alexa-bot"
   region: "us-west-2"
   role: "arn:aws:iam::035849207430:role/service-role/ucsb-sa-innovathon-alexa-bot-role-ae8k1d0z"
-  runtime: "python3.7"
+  runtime: "python2.7"
   handler_name: "handler"
